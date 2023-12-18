@@ -10,7 +10,7 @@
     content: '';
     display: block;
     position: absolute;
-    background-image: linear-gradient(to bottom, rgba(30, 17, 6, 0.1), #1e0f06), url("../assets/bg.png");
+    background-image: linear-gradient(to bottom, rgba(30, 17, 6, 0.267), #1e0f06f5), url("../assets/bg.jpg");
     left: 0;
     top: 0;
     width: 100%;
@@ -32,7 +32,7 @@
     h1{
         text-align: center;
         line-height: 150%;
-        max-width: 940px;
+        max-width: 1170px;
         font-size: 40px;
     }
     p{
@@ -45,13 +45,13 @@
     padding: 14px 28px;
     color: $white-normal;
     background-color: $red-normal;
-    border: 0;
-    font-size: 18px;
+    border-radius: 10px;
+    font-size: 38px;
     font-weight: 600;
     margin: 14px 0;
 }
 .button-contact:hover{
-    animation: scaleButton 0.8s alternate infinite;
+    animation: scaleButton 0.5s alternate infinite;
 }
 @keyframes scaleButton {
     from{
@@ -62,24 +62,24 @@
     }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1170px){
     .hero{
         min-height: 60vh;
         h1{
-            font-size: 34px;
+            font-size: 50px;
             padding: 0 14px;
             width: 100%;        
         }
 
         p{
-            font-size: 14px;
+            font-size: 29px;
         }
     }
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 1170px){
     .hero h1{
-        font-size: 24px;
+        font-size: 50px;
     }
 }
 
@@ -95,7 +95,7 @@
     gap: 14px;
     padding: 34px 14px 64px 14px;
     img{
-        max-width: 570px;
+        max-width: 800px;
     }
 }
 .about-content div{
@@ -103,15 +103,16 @@
 }
 .about-description{
     h2{
-        font-size: 38px;
+        font-size: 55px;
         margin-bottom: 24px;
     }
     p{
         margin-bottom: 14px;
         line-height: 150%;
+        font-size: 38px;
     }
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1170px){
     .about-content{
         flex-direction: column;
     }
@@ -128,20 +129,21 @@
 .services-content h2{
     text-transform: uppercase;
     text-align: center;
-    font-size: 38px;
+    font-size: 55px;
     margin-bottom: 14px;
 }
 .services-content p{
     line-height: 150%;
     margin-bottom: 14px;
     text-align: center;
-    max-width: 780px;
+    max-width: 1170px;
+    font-size: 38px;
 }
 .haircuts{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 16px;
+    gap: 58px;
     padding: 0 44px 34px 44px;
 }
 .haircut{
@@ -156,7 +158,7 @@
 }
 img{
     width: 100%;
-    max-width: 354px;
+    max-width: 680px;
     transition: transform 0.2s;
 }
 .haircut img:hover{
@@ -170,6 +172,7 @@ img{
     padding: 14px;
     background-color: $white-normal;
     z-index: 99;
+    font-size: 28px;
 }
 .haircut-info button{
     color: $white-normal;
@@ -177,15 +180,16 @@ img{
     padding: 4px 8px;
     border-radius: 4px;
     border: 0;
-    cursor: default;
+    font-size: 25px;
+    cursor: pointer;
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1170px){
     .haircuts{
         flex-direction: column;
     }
 }
 .haircut img{
-    max-width: 740px;
+    max-width: 500px;
 }
 .footer{
     display: flex;
@@ -196,46 +200,51 @@ img{
     gap: 24px;
     color: $white-normal;
 }
+.footer h1{
+    font-size: 45px;
+}
 .footer-icons{
     display: flex;
-    gap: 8px;
+    gap: 48px;
     color: $white-normal;
+}
+.footer-icons i{
+    color: $white-normal;
+    font-size: 60px;
+}
+.Formas-de-Pagamento{
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+}
+.Formas-de-Envio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
 }
 .btn-whatsapp{
     position: fixed;
-    bottom: 14px;
-    right: 24px;
+    bottom: 38px;
+    right: 48px;
     z-index: 99;
     img{
-        max-width: 74px;
+        max-width: 120px;
         transition: trasform 0.4;
     }
     img:hover{
         transform: scale(1.1);
     }
 }
-.btn-whatsapp .tooltip-text{
-    visibility: hidden;
-    position: absolute;
-    width: 120px;
-    top: 8px;
-    left: -140px;
-    padding: 4px;
-    border-radius: 8px;
-    text-align: center;
-    background-color: $black-normal;
-    color: $white-normal;
-    opacity: 0;
-    transition: opacity 0.4s;
+.tooltip-text{
+    color: transparent;
 }
-.btn-whatsapp:hover .tooltip-text{
-    visibility: visible;
-    opacity: 1;
-}
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1170px){
     .btn-whatsapp{
         img{
-            max-width: 65px;
+            max-width: 240px;
         }
     }
 }
