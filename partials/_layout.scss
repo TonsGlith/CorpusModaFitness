@@ -49,8 +49,6 @@
     font-size: 38px;
     font-weight: 600;
     margin: 14px 0;
-}
-.button-contact:hover{
     animation: scaleButton 0.5s alternate infinite;
 }
 @keyframes scaleButton {
@@ -211,6 +209,8 @@ img{
 .footer-icons i{
     color: $white-normal;
     font-size: 60px;
+    transform: scale(1.07);
+    animation: scaleButton 0.4s alternate infinite;
 }
 .Formas-de-Pagamento{
     margin-top: 2%;
