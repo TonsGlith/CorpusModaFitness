@@ -33,7 +33,7 @@
         text-align: center;
         line-height: 150%;
         max-width: 1170px;
-        font-size: 40px;
+        font-size: 38px;
     }
     p{
         text-align: center;
@@ -46,7 +46,7 @@
     color: $white-normal;
     background-color: $red-normal;
     border-radius: 10px;
-    font-size: 38px;
+    font-size: 34px;
     font-weight: 600;
     margin: 14px 0;
     animation: scaleButton 0.5s alternate infinite;
@@ -70,7 +70,7 @@
         }
 
         p{
-            font-size: 29px;
+            font-size: 27px;
         }
     }
 }
@@ -156,7 +156,7 @@
 }
 img{
     width: 100%;
-    max-width: 680px;
+    max-width: 620px;
     transition: transform 0.2s;
 }
 .haircut img:hover{
