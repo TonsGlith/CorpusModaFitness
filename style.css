@@ -51,7 +51,7 @@ header {
   content: "";
   display: block;
   position: absolute;
-  background-image: linear-gradient(to bottom, rgba(30, 17, 6, 0.267), rgba(30, 15, 6, 0.9607843137)), url("../assets/bg.jpg");
+  background-image: linear-gradient(to bottom, rgba(30, 17, 6, 0), #1e0f06), url("../assets/bg.jpg");
   left: 0;
   top: 0;
   width: 100%;
@@ -91,7 +91,7 @@ header {
   font-size: 34px;
   font-weight: 600;
   margin: 14px 0;
-  animation: scaleButton 0.5s alternate infinite;
+  animation: scaleButton 0.3s alternate infinite;
 }
 
 @keyframes scaleButton {
@@ -99,7 +99,7 @@ header {
     transform: scale(1);
   }
   to {
-    transform: scale(1.07);
+    transform: scale(1.3);
   }
 }
 @media screen and (max-width: 1170px) {
@@ -112,7 +112,7 @@ header {
     width: 100%;
   }
   .hero p {
-    font-size: 27px;
+    font-size: 35px;
   }
 }
 @media screen and (max-width: 1170px) {
