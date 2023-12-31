@@ -167,14 +167,22 @@ img{
 }
 .haircut-info{
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
     padding: 14px;
     background-color: $white-normal;
     z-index: 99;
     font-size: 28px;
 }
+.haircut-info p{
+    display:flex;
+    font-size: 20px;
+    margin-top: 1%;
+}
 .haircut-info button{
+    margin-top: 1%;
+    align-items: center;
+    justify-content: center;
     color: $white-normal;
     background-color: $red-normal;
     padding: 4px 8px;
@@ -235,10 +243,10 @@ img{
     z-index: 99;
     img{
         max-width: 120px;
-        transition: trasform 0.4;
+        animation: scaleButton 0.4s alternate infinite;
     }
     img:hover{
-        transform: scale(1.1);
+        transform: scale(1.2);
     }
 }
 .tooltip-text{

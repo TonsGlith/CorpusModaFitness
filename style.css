@@ -214,15 +214,24 @@ img {
 
 .haircut-info {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   padding: 14px;
   background-color: #ffffff;
   z-index: 99;
   font-size: 28px;
 }
 
+.haircut-info p {
+  display: flex;
+  font-size: 20px;
+  margin-top: 1%;
+}
+
 .haircut-info button {
+  margin-top: 1%;
+  align-items: center;
+  justify-content: center;
   color: #ffffff;
   background-color: rgba(255, 60, 0, 0.8470588235);
   padding: 4px 8px;
@@ -292,10 +301,10 @@ img {
 }
 .btn-whatsapp img {
   max-width: 120px;
-  transition: trasform 0.4;
+  animation: scaleButton 0.4s alternate infinite;
 }
 .btn-whatsapp img:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .tooltip-text {
